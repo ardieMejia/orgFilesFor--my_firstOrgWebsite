@@ -1,17 +1,18 @@
 #+AUTHOR: Wan Ahmad Ardie bin spiderman
-#+TITLE: A promising attempt (WOOHOO) at publishing a website from org-mode
+#+TITLE: A promising attempt at publishing a website from org-mode
 #+OPTIONS: toc:nil
 #+EMAIL: wan_ahmad_ardie@yahoo.com
 #+hugo_base_dir: /home/ardie/Documents/firstOrgWebsite
+#+TAGS: theory practical 
 * Hello:
 :PROPERTIES:
 :EXPORT_FILE_NAME: _index
 :EXPORT_HUGO_SECTION: /
 :END:
-** My new shiny website that really only stores my posts as exact copies of my org files
-****** /They are made this way so that thinking about my website design doesnt interfere the flow of thought when using Emacs/
-****** /These are all generated from my org files/
-****** /Which means literally all I have to do is type something like this:/
+** My new shiny website published "directly" from my personal .org files
+ - /So it doesnt interfere with the flow of my thoughts when using Emacs/
+ - /All generated from my org files/
+ - /All I have to do is type something like this:/
     #+BEGIN_SRC org
     ,* Heading1
     :PROPERTIES:
@@ -27,22 +28,46 @@
 
     #+END_SRC
 /... and type C-c C-e H A and it publishes to the entire "project" with the help of Emacs ox-hugo package/
-
-* What we learnt that is slightly other:
+****** Sections:
+******* [[./electronics/][electronics]]
+******* [[./motorbasics/][motor basics]]
+* Electronics:
 :PROPERTIES:
-:EXPORT_FILE_NAME: woodworking
-:EXPORT_HUGO_SECTION: posts
-:CUSTOM_ID: woodworking1
+:EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_SECTION: electronics
+:CUSTOM_ID: electronics1
 :END:
 #+OPTIONS: toc:nil
-** [[file:https://drive.google.com/file/d/17RPcUgBLroyXiZZ-aHs_-HfcuXrfP5q5/view?usp=sharing][wedge idea (google drive link)]]
-** [[./static/3.jpg][local site image of wedgeyy]]
+** Behold!! A gallore of electronics articles
+**  
 ** [[./static/3.jpg][file:./static/thumbs/th_3.jpg]]
-** 
-* Back to basics (motors):
+**  
+** Transistors:                                                      :theory:
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: transistors
+   :EXPORT_HUGO_SECTION*: electronicsComponents
+   :CUSTOM_ID: transistors1
+   :END:
+ #+OPTIONS: toc:nil
+*** This page is about transistors
+*** 
+*** [[./static/3.jpg][file:./static/thumbs/th_3.jpg]]
+*** 
+** Triacs:                                                           :theory:
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: triac
+   :EXPORT_HUGO_SECTION*: electronicsComponents
+   :CUSTOM_ID: triac1
+   :END:
+ #+OPTIONS: toc:nil
+*** This page is about triacs!!!!
+*** 
+*** [[./static/3.jpg][file:./static/thumbs/th_3.jpg]]
+*** 
+* Back to basics (motors): 
 :PROPERTIES:
-:EXPORT_FILE_NAME: motorbasics
-:EXPORT_HUGO_SECTION: posts
+:EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_SECTION: motorbasics
 :CUSTOM_ID: motorbasics1
 :END:
 ** Cool new website on electronics should explore
