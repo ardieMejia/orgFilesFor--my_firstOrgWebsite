@@ -2,7 +2,8 @@
 #+TITLE: A promising attempt at publishing a website from org-mode
 #+OPTIONS: toc:nil
 #+EMAIL: wan_ahmad_ardie@yahoo.com
-#+hugo_base_dir: /home/ardie/Documents/firstOrgWebsite
+
+#+hugo_base_dir: /home/ardie/Documents/pulledFromWebsite/my_firstOrgWebsite
 #+TAGS: theory practical 
 * Hello:
 :PROPERTIES:
@@ -28,9 +29,6 @@
 
     #+END_SRC
 /... and type C-c C-e H A and it publishes to the entire "project" with the help of Emacs ox-hugo package/
-****** Sections:
-******* [[./electronics/][electronics]]
-******* [[./motorbasics/][motor basics]]
 * Electronics:
 :PROPERTIES:
 :EXPORT_FILE_NAME: _index
@@ -70,6 +68,7 @@
 :EXPORT_HUGO_SECTION: motorbasics
 :CUSTOM_ID: motorbasics1
 :END:
+#+OPTIONS: toc:nil
 ** Cool new website on electronics should explore
 https://www.electrical4u.com/series-wound-dc-motor-or-dc-series-motor/
 ** Interesting DC motor design with flippable terminals
