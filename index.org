@@ -45,47 +45,57 @@
 *** 
 *** [[./static/3.jpg][file:./static/thumbs/th_3.jpg]]
 *** 
-* Back to basics (motors): 
-:PROPERTIES:
-:EXPORT_FILE_NAME: _index
-:EXPORT_HUGO_SECTION: motorbasics
-:CUSTOM_ID: motorbasics1
-:END:
-** Cool new website on electronics should explore
+* Bash: 
+** Syntax (numbers and strings)
    :PROPERTIES:
    :EXPORT_FILE_NAME: article1
-   :EXPORT_HUGO_SECTION: motors
+   :EXPORT_HUGO_SECTION: bash
    :CUSTOM_ID: article1
    :END:
-https://www.electrical4u.com/series-wound-dc-motor-or-dc-series-motor/
-** Interesting DC motor design with flippable terminals
+ -  https://stackoverflow.com/questions/1362298/convert-floating-point-variable-to-integer
+   - Displaying floating-point in a C-style (printf) manner. Very handy.
+ - https://stackoverflow.com/questions/19482123/extract-part-of-a-string-using-bash-cut-split
+   - Complete and more elegant way to cut strings into pieces, other than turning it into arrays first.
+ - https://stackabuse.com/substrings-in-bash/
+   - Some weird but useful ones of string manipulation 
+     - using pipe (|) and cut -> | cut
+** Syntax (arrays)
    :PROPERTIES:
    :EXPORT_FILE_NAME: article2
-   :EXPORT_HUGO_SECTION: motors
+   :EXPORT_HUGO_SECTION: bash
    :CUSTOM_ID: article2
    :END:
-https://www.youtube.com/watch?v=EAxWAtvrVto
- - A very strange looking DC (and HUGE!!) motor, a design Ive seen the first time?! The stator is connected in series with the rotor. 
-     - Wait a minute? A universal motor (DC & AC) also has this series connection too, right?
- - Unlike a toy DC motor, flipping the power terminals doesnt effect the direction, as flipping the terminal reverse BOTH the polarity of the stator (field) and the rotor. To reverse, youd have to flip the connection between the field and the rotor (which unlike our toy ones, can disconnected, some kind of terminal thing on the outside body.. weird) 
- - Popular motor in golf carts, and forklifts.
- - It has no bearings, coz the rotor floats on an external spline (and the spline has a bearing). So you cant run it by itself. 
-** Youtube video (computer graphic) of how universal motor really works
+ - https://opensource.com/article/18/5/you-dont-know-bash-intro-bash-arrays
+   - basic array syntax
+ - https://linuxhint.com/use-ifs-in-bash/
+   - very handy to remember this or keep in this tip close at hand. Dealing with arrays in loops. The site where I learnt this trick:
+#+INCLUDE: ./static/bash/syntax1.sh src bash
+ - http://www.masteringunixshell.net/qa35/bash-how-to-print-array.html
+   - how to print bash array
+** Syntax (functions)
    :PROPERTIES:
    :EXPORT_FILE_NAME: article3
-   :EXPORT_HUGO_SECTION: motors
+   :EXPORT_HUGO_SECTION: bash
    :CUSTOM_ID: article3
    :END:
-https://www.youtube.com/watch?v=0PDRJKz-mqE
- - A video that FINALLY made me understand!!
- - HAHAHA! The finger trick (I bloody hate school)
- - back to REAL BASICS. 3 elements = magnet direction, current direction & force direction.
- - When the current flips, 1 other element has to flip
- - If the magnet flips (such in AC), then everythings okay (direction the SAME)
- - If the magnet doesnt flip, then direction will flip
- - In a normal DC motor, the magnet is glued on to the body, so the magnet never changes, so the current MUST be DC
- - In an AC motor, the magnet is an ELECTROMAGNET. Generated from the incoming current (wrapping around the body). If the current flips, the magnet produced by the electromagnet flips. 
- - This is why the direction always works.
- - Stupid wikipedia! whatever
-
-
+https://ryanstutorials.net/bash-scripting-tutorial/bash-functions.php
+ - functions in Bash allows coder to treat the code like normal terminal usage. So, -- ls -- can have a (script scope) alias using function ls(){ #--some code }. And $1 has the same property.
+** Syntax (files and folder)
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: article4
+   :EXPORT_HUGO_SECTION: bash
+   :CUSTOM_ID: article4
+   :END:
+https://www.cyberciti.biz/faq/howto-check-if-a-directory-exists-in-a-bash-shellscript/
+** Syntax (case statement, for loops, user input)
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: article5
+   :EXPORT_HUGO_SECTION: bash
+   :CUSTOM_ID: article5
+   :END:
+https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_03.html
+ - case statements
+https://www.thegeekstuff.com/2011/07/bash-for-loop-examples/
+ - some VERY USEFUL bash for loops. Some VERY SIMPLE ones. 
+https://askubuntu.com/questions/446156/pause-execution-and-wait-for-user-input
+ - wait for user input
