@@ -14,7 +14,6 @@
      - _index.md
  - **menu/**
    - index.md
-   - _index.md            
 -->
             
             
@@ -30,7 +29,6 @@
      - _index.md
  - :open_file_folder:menu
    - index.md
-   - _index.md
             
             
 Note-to-self: public/ directory has been deleted from generated site (not this repo). I dont know what public/ does locally? But render.com generates its own public/ so this is fine. 
