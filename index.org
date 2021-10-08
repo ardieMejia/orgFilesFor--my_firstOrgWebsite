@@ -19,40 +19,67 @@
     - I then only type Ctl-c Ctl-e H A and it auto-publishes to an entire Hugo-compatible tree structure, which is ready to published online.
     - The most easiest (and fastest) process of creating a static site I have tried so far
 * Electronics:
-:PROPERTIES:
-:EXPORT_FILE_NAME: _index
-:EXPORT_HUGO_SECTION: electronics
-:CUSTOM_ID: electronics1
-:END:
 ** Behold!! A gallore of electronics articles
 **  
 ** [[./static/3.jpg][file:./static/thumbs/th_3.jpg]]
 **  
 ** Transistors:                                                      :theory:
-   :PROPERTIES:
-   :EXPORT_FILE_NAME: transistors
-   :EXPORT_HUGO_SECTION*: electronicscomponents
-   :CUSTOM_ID: transistors1
-   :END:
 *** This page is about transistors
 *** We might need to practice overlay single posts with unique layout, with minimal editing of code
 *** [[./static/3.jpg][file:./static/thumbs/th_3.jpg]]
 *** 
 ** Triacs:                                                           :theory:
-   :PROPERTIES:
-   :EXPORT_FILE_NAME: triac
-   :EXPORT_HUGO_SECTION*: electronicscomponents
-   :CUSTOM_ID: triac1
-   :END:
 *** This page is about triacs!!!!
 *** 
 *** [[./static/3.jpg][file:./static/thumbs/th_3.jpg]]
 *** 
-* Bash: 
-** Syntax (numbers and strings)
+* Spacemacs: 
    :PROPERTIES:
-   :EXPORT_FILE_NAME: article1
-   :EXPORT_HUGO_SECTION: bash
+   :EXPORT_FILE_NAME: _index
+   :EXPORT_HUGO_SECTION: docs/spacemacs
+   :CUSTOM_ID: _articleIndex
+   :END:
+** 6) What is Spacemacs?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: whatIsSpacemacs
+   :EXPORT_HUGO_SECTION: docs/spacemacs
+   :CUSTOM_ID: article6
+   :END:
+ - It is a "flavour" of Emacs
+** 7) How does one go about installing Emacs/Spacemacs/Doom Emacs and what not?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: howToInstall
+   :EXPORT_HUGO_SECTION: docs/spacemacs
+   :CUSTOM_ID: article7
+   :END:
+ - https://github.com/syl20bnr/spacemacs
+   - The only link you'll need to start using Spacemacs. 
+ - Basically the process to install all variants of Emacs are the same (even when they look completely different!). 
+   - You install the base Emacs
+   - You install the init folder (basically configuration folder). This is where the real magic of Spacemacs (and in Doom Emacs) happens, where your base program will read this config file everytime it starts, thereby producing a completely different program (depending on the config). 
+   - This modification is highly robust (as you will discover that, if you accidentally deleted this config folder (.emacs.d), base Emacs will simply start as default classic and painful Emacs)
+   - Theres some more stuff going in the background. But this is good enough to understand
+   - It will look like this:
+{{% spacamacsDiagram1 %}}
+
+
+
+ - My version of emacs is 25.3.2. I recommend you install something later than 25.1 to "get with the times". Just a suggestion. (No, in fact, MAKE SURE above 25.1)
+    - Ubuntu 14.04's package manager does not have an updated Emacs. So I found this repository Kevin Kelley. 
+    - Instructions can be found [[https://ubuntuhandbook.org/index.php/2017/04/install-emacs-25-ppa-ubuntu-16-04-14-04/][here]]`
+    - Or just copy this (same thing):
+
+#+INCLUDE: ./static/bash/syntax2.sh src bash
+* Bash: 
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: _index
+   :EXPORT_HUGO_SECTION: docs/bash
+   :CUSTOM_ID: _articleIndex
+   :END:
+** 1) Syntax (numbers and strings)
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: syntax1
+   :EXPORT_HUGO_SECTION: docs/bash
    :CUSTOM_ID: article1
    :END:
  -  https://stackoverflow.com/questions/1362298/convert-floating-point-variable-to-integer
@@ -62,10 +89,10 @@
  - https://stackabuse.com/substrings-in-bash/
    - Some weird but useful ones of string manipulation 
      - using pipe (|) and cut -> | cut
-** Syntax (arrays)
+** 2) Syntax (arrays)
    :PROPERTIES:
-   :EXPORT_FILE_NAME: article2
-   :EXPORT_HUGO_SECTION: bash
+   :EXPORT_FILE_NAME: syntax2
+   :EXPORT_HUGO_SECTION: docs/bash
    :CUSTOM_ID: article2
    :END:
  - https://opensource.com/article/18/5/you-dont-know-bash-intro-bash-arrays
@@ -75,25 +102,25 @@
 #+INCLUDE: ./static/bash/syntax1.sh src bash
  - http://www.masteringunixshell.net/qa35/bash-how-to-print-array.html
    - how to print bash array
-** Syntax (functions)
+** 3) Syntax (functions)
    :PROPERTIES:
-   :EXPORT_FILE_NAME: article3
-   :EXPORT_HUGO_SECTION: bash
+   :EXPORT_FILE_NAME: syntax3
+   :EXPORT_HUGO_SECTION: docs/bash
    :CUSTOM_ID: article3
    :END:
 https://ryanstutorials.net/bash-scripting-tutorial/bash-functions.php
  - functions in Bash allows coder to treat the code like normal terminal usage. So, -- ls -- can have a (script scope) alias using function ls(){ #--some code }. And $1 has the same property.
-** Syntax (files and folder)
+** 4) Syntax (files and folder)
    :PROPERTIES:
-   :EXPORT_FILE_NAME: article4
-   :EXPORT_HUGO_SECTION: bash
+   :EXPORT_FILE_NAME: syntax4
+   :EXPORT_HUGO_SECTION: docs/bash
    :CUSTOM_ID: article4
    :END:
 https://www.cyberciti.biz/faq/howto-check-if-a-directory-exists-in-a-bash-shellscript/
-** Syntax (case statement, for loops, user input)
+** 5) Syntax (case statement, for loops, user input)
    :PROPERTIES:
-   :EXPORT_FILE_NAME: article5
-   :EXPORT_HUGO_SECTION: bash
+   :EXPORT_FILE_NAME: syntax5
+   :EXPORT_HUGO_SECTION: docs/bash
    :CUSTOM_ID: article5
    :END:
 https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_03.html
