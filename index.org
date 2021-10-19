@@ -33,20 +33,20 @@
 *** 
 *** [[./static/3.jpg][file:./static/thumbs/th_3.jpg]]
 *** 
-* Spacemacs: 
+* 1)Spacemacs:
    :PROPERTIES:
    :EXPORT_FILE_NAME: _index
    :EXPORT_HUGO_SECTION: docs/spacemacs
    :CUSTOM_ID: _articleIndex
    :END:
-** 6) What is Spacemacs?
+** 1) What is Spacemacs?
    :PROPERTIES:
    :EXPORT_FILE_NAME: whatIsSpacemacs
    :EXPORT_HUGO_SECTION: docs/spacemacs
    :CUSTOM_ID: article6
    :END:
  - It is a "flavour" of Emacs
-** 7) How does one go about installing Emacs/Spacemacs/Doom Emacs and what not?
+** 2) How does one go about installing Emacs/Spacemacs/Doom Emacs and what not?
    :PROPERTIES:
    :EXPORT_FILE_NAME: howToInstall
    :EXPORT_HUGO_SECTION: docs/spacemacs
@@ -70,7 +70,7 @@
     - Or just copy this (same thing):
 
 #+INCLUDE: ./static/bash/syntax2.sh src bash
-* Bash: 
+* 2)Bash: 
    :PROPERTIES:
    :EXPORT_FILE_NAME: _index
    :EXPORT_HUGO_SECTION: docs/bash
